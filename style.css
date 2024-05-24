@@ -1,0 +1,239 @@
+:root{
+    --blue-color:#1D9BF0;
+    --gray-color:#71767B;
+}
+*{
+background-color: black;
+color: white;
+box-sizing: border-box
+}
+
+.container{
+    display: flex;
+    height:500vh;
+    width: 100%;
+    position: relative;
+    
+}
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 10px 0 0 30px;
+    padding: 10px;
+    position: sticky;
+    height: 100vh;
+    top: 0px;
+}
+.edit{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.button{
+    border: none;
+    padding: 8px 5px;
+    width: 60%;
+    background-color: var(--blue-color);
+border-radius: 20px;
+cursor: pointer;
+}
+.edit>img,.postHead>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.userName{
+    /* display: flex;
+    flex-direction: column; */
+    width:100% ;
+    display: flex;
+    align-items: center;
+}
+.edit+pre{
+    position: relative;
+    bottom: 26px;
+    left: 50px;
+    width: 50%;
+}
+i.ellipsis{
+    position: absolute;
+    left: 121%;
+    bottom: 40px;
+}
+.main{
+    border: 1px solid var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0px 0 0 30px;
+    position: relative;
+
+}
+.navTab{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+justify-content: space-evenly;
+    font-weight: bold;
+    background-color: rgba(red, green, blue, .1);
+  
+}
+.nav{
+    border: 2px solid var(--gray-color);
+    margin-bottom: 15px;
+    position: sticky;
+    border-top: none;
+    top:1px;
+    z-index: 1;
+opacity:80% ;
+}
+.for{
+    width: 15%;
+    height: 73%;
+    text-align: center;
+    padding: 15px 5px 15px 5px ;
+    border-bottom: 4px solid var(--blue-color);
+    cursor: pointer;
+}
+
+.light,.setting{
+    text-align: center;
+    padding: 15px 5px 15px 5px ;
+    color: var(--gray-color);
+    cursor: pointer;
+    
+}
+.setting{
+    color: white;
+}
+.active:hover,.light:hover,.active:focus{
+background-color: #202327;
+    opacity: 80%;
+}
+.post{
+border-bottom: 1px solid var(--gray-color);
+}
+.postHead{
+    padding-left:10px ;
+    width:100% ;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    gap: 4px;
+/* justify-content: space-evenly; */
+}
+/* .postHead+.photo{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 20px;
+} */
+.photo>img{
+    display: flex;
+    width: 100%;
+    margin: 35px auto;
+
+}
+.ellipsis1{
+    position: absolute;
+    right: 2%;
+}
+.gray{
+    color: var(--gray-color);
+}
+.txt{
+    padding: 0 10px 0 10px;
+    direction: rtl;
+}
+.postFooter{
+    padding-left:10px ;
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4px;
+}
+.together{
+    display: flex;
+    align-items: center;
+gap: 15px;
+}
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    align-content: center;
+    width: 27%;
+}
+.search{
+    padding: 5px;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    background-color: #202327;
+    border-radius: 10px;
+    margin: 10px 0 0 15px;
+}
+.search>i{
+    background-color: #202327;
+}
+#search{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #202327;
+    color: var(--gray-color);
+}
+/* @media only screen and(max-width:925px) {
+    .leftSide{
+display: none;
+    }
+} */
+.rtl{
+    direction: rtl;
+}
+
+
+
+
+.twittertrends {
+    margin: 30px 0 0 25px;
+    width: 300px;
+    border: 1px solid rgb(155, 157, 160);
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+.headertrends {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(155, 157, 160);
+    padding: 10px;
+}
+
+.trending {
+color:var(--gray-color);
+}
+
+.trenditem {
+    border-bottom: 1px solid rgb(155, 157, 160);
+    padding: 10px;
+    line-height: 22px;
+}
+.hashtag {
+    font-weight: bolder;
+}
+.showmore{
+text-align: center;
+}
+.showmore>a{
+    text-decoration: none;
+    width: 10px;
+    height:5px;
+    padding: 11px 20px;
+    color: white;    
+    background-color: var(--blue-color);
+    border-radius: 20px;
+}
